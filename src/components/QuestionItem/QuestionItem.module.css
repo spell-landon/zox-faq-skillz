@@ -1,18 +1,32 @@
 /* Question Container */
 .questionContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
 }
 /* Each Individual Question */
 .question {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
   flex-direction: row;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   padding: 1rem 0.5rem;
   border-bottom: 0.5px solid rgba(211, 211, 211, 100%);
   width: 100%;
   font-size: 16px;
   font-weight: 500;
+  -webkit-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
   transition: all 0.4s ease;
   cursor: pointer;
 }
@@ -37,6 +51,8 @@
   height: 0;
   overflow: hidden;
   padding-left: 2.5rem;
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
 /* Padding on the nested answer */
