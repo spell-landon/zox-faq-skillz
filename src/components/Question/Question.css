@@ -25,7 +25,7 @@
   transition: all 0.4s ease;
 }
 .answer {
-  padding: 0.5rem;
+  /* padding: 0.5rem; */
   height: 100%;
   /* max-height: 0px; */
   /* visibility: hidden; */

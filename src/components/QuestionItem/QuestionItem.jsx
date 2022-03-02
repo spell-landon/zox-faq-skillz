@@ -27,7 +27,7 @@ function QuestionItem({ question }) {
           <p>{question.question}</p>
         </div>
 
-        <div className='answer'>{open && <p>{question.answer}</p>}</div>
+        <div className='answer'>{open ? <>{JSON.stringify(question.answer).replaceAll('"', '')}</> : ''}</div>
       </div>
     </div>
   );

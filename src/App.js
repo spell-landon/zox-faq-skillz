@@ -10,6 +10,9 @@ import { account } from './data/account';
 import { loyaltyProgram } from './data/loyaltyProgram';
 import { zoxpass } from './data/zoxpass';
 import { productInformation } from './data/productInformation';
+import { monthlySubscription } from './data/monthlySubscriptions';
+import { returnExchange } from './data/returnExchange';
+import { rewards } from './data/rewards';
 
 function App() {
   return (
@@ -38,6 +41,18 @@ function App() {
       ))}
       <h2>Product Information</h2>
       {productInformation.map((question, index) => (
+        <QuestionItem question={question} key={index} />
+      ))}
+      <h2>Monthly Subscriptions</h2>
+      {monthlySubscription.map((question, index) => (
+        <QuestionItem question={question} key={index} />
+      ))}
+      <h2>Returns & Exchanges</h2>
+      {returnExchange.map((question, index) => (
+        <QuestionItem question={question} key={index} />
+      ))}
+      <h2>Rewards</h2>
+      {rewards.map((question, index) => (
         <QuestionItem question={question} key={index} />
       ))}
     </div>
