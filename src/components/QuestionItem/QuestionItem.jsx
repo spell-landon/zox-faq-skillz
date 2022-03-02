@@ -1,17 +1,20 @@
+// dependencies
 import React, { useState, useRef } from 'react';
+// stylesheet
 import styles from './QuestionItem.module.css';
-// icons
 // icons
 import { AiOutlinePlus } from 'react-icons/ai';
 import { AiOutlineMinus } from 'react-icons/ai';
 
 function QuestionItem({ question }) {
+  // Open State
   const [open, setOpen] = useState(false);
-
+  // Toggle function
   const toggleOpen = () => {
     setOpen(!open);
   };
   const contentEl = useRef();
+  // Set the active class on question to keep the color
   const activeClass = `${styles.question} ${open ? styles.active : null}`;
 
   return (

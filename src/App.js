@@ -1,5 +1,7 @@
+// dependencies
+import React from 'react';
+// stylesheet
 import './App.css';
-import React, { useState } from 'react';
 // components
 import Title from './components/Title/Title';
 import QuestionItem from './components/QuestionItem/QuestionItem';
@@ -13,10 +15,8 @@ import { productInformation } from './data/productInformation';
 import { monthlySubscription } from './data/monthlySubscriptions';
 import { returnExchange } from './data/returnExchange';
 import { rewards } from './data/rewards';
-import orderingJSON from './data/orderingJSON';
 
 function App() {
-
   return (
     <div className='faq-container'>
       <Title />

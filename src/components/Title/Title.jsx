@@ -1,4 +1,6 @@
+// dependencies
 import React from 'react';
+// stylesheet
 import styles from './Title.module.css';
 
 function Title(props) {

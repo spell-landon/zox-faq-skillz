@@ -8,10 +8,10 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 1rem;
+  padding: 1rem 0.5rem;
   border-bottom: 0.5px solid rgba(211, 211, 211, 100%);
   width: 100%;
-  font-size: 1rem;
+  font-size: 16px;
   font-weight: 500;
   transition: all 0.4s ease;
   cursor: pointer;
@@ -27,17 +27,18 @@
 /* Plus / Minus Icons */
 .icon {
   margin-right: 0.5rem;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   transition: all 0.4s ease;
 }
 /* Answer */
 .answer {
-  font-size: 14px;
+  font-size: 13.5px;
   font-weight: 500;
+  line-height: 1.25rem;
   height: 0;
   overflow: hidden;
-  padding-left: 3.5rem;
-  transition: all 0.4s ease;
+  padding-left: 2.5rem;
+  transition: all 0.5s ease;
 }
 /* Padding on the nested answer */
 .answerOpen {
@@ -51,4 +52,9 @@
 /* Link hover state inside Answer */
 .answer a:hover {
   color: rgb(90, 194, 178);
+}
+/* Bold text in Answer */
+.answer strong {
+  font-size: 15px;
+  font-weight: 800;
 }
