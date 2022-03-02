@@ -1,41 +1,24 @@
 import React, { useState } from 'react';
 import styles from './Department.module.css';
 import { questions } from '../../questions';
-// icons
-import { AiOutlinePlus } from 'react-icons/ai';
-import { AiOutlineMinus } from 'react-icons/ai';
+import Question from '../Question/Question';
 
 function Department(props) {
-  const [active, setActive] = useState(false);
+  const [clicked, setClicked] = useState('0');
+  const handleToggle = (index) => {
+      if (clicked === index) {
+          return setClicked('0')
+      }
+      setClicked(index)
+  }
   return (
     <div className={styles.departmentContainer}>
-      {questions.map((question) => (
-        <div>
-          <h2>{question.department}</h2>
-          {question.faq.map((questionAnswer) => (
-            <div className={styles.individualQuestion}>
-              <div
-                className={styles.question}
-                onClick={() => {
-                  setActive(!active);
-                }}>
-                {active ? (
-                  <AiOutlineMinus className={styles.icon} />
-                ) : (
-                  <AiOutlinePlus className={styles.icon} />
-                )}
-
-                <p>{questionAnswer.question}</p>
-              </div>
-              {active ? (
-                <p className={styles.answer}>{questionAnswer.answer}</p>
-              ) : (
-                ''
-              )}
-            </div>
-          ))}
-        </div>
-      ))}
+      {/* Map through the .js list */}
+      <ul>
+        {questions.map((faq, index) => (
+          <Question faq={faq} key={index} onToggle={() => handleToggle(index)} active={clicked === index}/>
+        ))}
+      </ul>
     </div>
   );
 }
