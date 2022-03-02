@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import styles from './QuestionItem.module.css';
 // icons
 // icons
@@ -11,23 +11,35 @@ function QuestionItem({ question }) {
   const toggleOpen = () => {
     setOpen(!open);
   };
+  const contentEl = useRef();
+  const activeClass = `${styles.question} ${open ? styles.active : null}`;
 
   return (
-    <div>
-      <div className='individualQuestions'>
-        <div className='question' onClick={toggleOpen}>
-          {/* Plus/Minus Icons */}
-          {open ? (
-            <AiOutlineMinus className='icon' />
-          ) : (
-            <AiOutlinePlus className='icon' />
-          )}
+    <div className={styles.questionContainer}>
+      <div className={activeClass} onClick={toggleOpen}>
+        {/* Plus/Minus Icons */}
+        {open ? (
+          <AiOutlineMinus className={styles.icon} />
+        ) : (
+          <AiOutlinePlus className={styles.icon} />
+        )}
 
-          {/* Actual Question */}
-          <p>{question.question}</p>
-        </div>
-
-        <div className='answer'>{open ? <>{JSON.stringify(question.answer).replaceAll('"', '')}</> : ''}</div>
+        {/* Actual Question */}
+        <p>{question.question}</p>
+      </div>
+      {/* Answer */}
+      <div
+        ref={contentEl}
+        className={styles.answer}
+        style={
+          open
+            ? {
+                height: contentEl.current.scrollHeight,
+                transform: 'translateY(0)',
+              }
+            : { height: '0px', transform: 'translateY(-20px)' }
+        }>
+        <div className={styles.answerOpen}>{question.answer}</div>
       </div>
     </div>
   );

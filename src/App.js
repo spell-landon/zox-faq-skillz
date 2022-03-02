@@ -1,7 +1,7 @@
 import './App.css';
+import React, { useState } from 'react';
 // components
 import Title from './components/Title/Title';
-import Department from './components/Department/Department';
 import QuestionItem from './components/QuestionItem/QuestionItem';
 // data (questions)
 import { ordering } from './data/ordering';
@@ -13,12 +13,13 @@ import { productInformation } from './data/productInformation';
 import { monthlySubscription } from './data/monthlySubscriptions';
 import { returnExchange } from './data/returnExchange';
 import { rewards } from './data/rewards';
+import orderingJSON from './data/orderingJSON';
 
 function App() {
+
   return (
     <div className='faq-container'>
       <Title />
-      {/* <Department /> */}
       <h2>Ordering</h2>
       {ordering.map((question, index) => (
         <QuestionItem question={question} key={index} />

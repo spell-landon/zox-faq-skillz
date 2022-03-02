@@ -1,0 +1,54 @@
+/* Question Container */
+.questionContainer {
+  display: flex;
+  flex-direction: column;
+}
+/* Each Individual Question */
+.question {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 1rem;
+  border-bottom: 0.5px solid rgba(211, 211, 211, 100%);
+  width: 100%;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: all 0.4s ease;
+  cursor: pointer;
+}
+/* Question Hover State */
+.question:hover {
+  background-color: rgba(247, 247, 247, 100%);
+}
+/* Keep the background color when question is clicked */
+.active {
+  background-color: rgba(247, 247, 247, 100%);
+}
+/* Plus / Minus Icons */
+.icon {
+  margin-right: 0.5rem;
+  font-size: 1.5rem;
+  transition: all 0.4s ease;
+}
+/* Answer */
+.answer {
+  font-size: 14px;
+  font-weight: 500;
+  height: 0;
+  overflow: hidden;
+  padding-left: 3.5rem;
+  transition: all 0.4s ease;
+}
+/* Padding on the nested answer */
+.answerOpen {
+  padding: 1.5rem 0;
+}
+/* Links inside Answer */
+.answer a {
+  color: rgba(114, 226, 209, 100%);
+  text-decoration: none;
+}
+/* Link hover state inside Answer */
+.answer a:hover {
+  color: rgb(90, 194, 178);
+}
