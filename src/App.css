@@ -1,5 +1,5 @@
 .faq-container {
-  width: 90%;
+  width: 93%;
   max-width: 1260px;
   margin: 0 auto;
   padding: 1rem 0;
@@ -8,4 +8,6 @@
 .faq-container h2 {
   font-weight: 500;
   font-size: 36px;
+  padding-bottom: 1rem;
+  padding-top: 2rem;
 }
