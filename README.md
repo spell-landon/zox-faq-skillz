@@ -1,6 +1,6 @@
 # ZOX FAQ Section
 
- Chekc out the [Live Example](https://zox-faq.netlify.app/) here!
+ Check out the [Live Example](https://zox-faq.netlify.app/) here!
 
 ### Example image depicting the FAQ Section of the ZOX 'Contact Us' page
 
