@@ -1,0 +1,43 @@
+/* Hero Image Container */
+.heroContainer {
+  height: 60vh;
+  width: 100vw;
+}
+/* Hero Image */
+.heroContainer img {
+  height: 60vh;
+  width: 100vw;
+  object-fit: cover;
+  margin: 0 auto;
+}
+/* Hero Text Container */
+.heroText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 60vh;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -83.2%);
+}
+/* 'Contact Us' Text */
+.heroContainer p {
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 36px;
+}
+
+@media (max-width: 798px) {
+  .heroContainer {
+    height: 100%;
+  }
+  .heroContainer img {
+    height: 100%;
+  }
+  .heroText {
+    height: 100%;
+  }
+}
