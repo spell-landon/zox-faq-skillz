@@ -1,6 +1,8 @@
 /* Contact Container */
 .contactFormContainer {
   padding: 4rem 0;
+  width: 93%;
+  margin: 0 auto;
 }
 /* Contact Box */
 .contactBox {
@@ -24,8 +26,15 @@
   padding: 0.7rem 0;
   line-height: 1.6rem;
 }
+
+/* ----- FORM ----- */
+.contactBox form {
+  display: flex;
+  flex-direction: column;
+}
+
 /* Form Labels */
 .contactBox label {
-      font-size: 14px;
+  font-size: 14px;
   font-weight: 500;
 }
