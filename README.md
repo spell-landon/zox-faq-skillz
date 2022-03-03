@@ -22,6 +22,10 @@ To view on your own computer, clone down and run via your local host:
 
 # Additional Images with Hero section and Contact Form
 
+### Banner and Navigation Section
+
+<img src='./src/assets/banner_nav.png' alt="Banner and Navigation Section">
+
 ### Hero Section
 
 <img src='./src/assets/heroSection.png' alt="Hero Section">

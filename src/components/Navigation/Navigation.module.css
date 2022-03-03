@@ -1,0 +1,56 @@
+/* Navigation Container */
+.navigationContainer {
+  height: 77px;
+  z-index: 1;
+  position: relative;
+}
+/* Menu Link Container */
+.menuLinks {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  margin: 0 auto;
+  margin-right: 9rem;
+}
+/* LINKS */
+.btn {
+  display: flex;
+  align-items: center;
+  margin: 0 0.2rem;
+  padding: 0.55rem;
+  color: black;
+  border: none;
+  background-color: transparent;
+  font-size: 15px;
+  cursor: pointer;
+}
+/* Button Hover State */
+.menuLinks .btn:hover {
+  color: rgba(88, 190, 199, 100%);
+}
+/* ZOX Logo */
+.menuLinks .ZOX {
+  height: 50px;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: black;
+}
+.menuLinks .ZOX:hover {
+  color: white;
+}
+/* Highlight the CONTACT button */
+.btn:nth-child(5) {
+  color: rgba(88, 190, 199, 100%);
+}
+/* Chevron Icons */
+.icon {
+  font-size: 24px;
+  transition: transform 0.3s ease;
+}
+.btn:hover .icon {
+  transform: rotate(180deg);
+}
