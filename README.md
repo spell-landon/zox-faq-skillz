@@ -1,6 +1,7 @@
 # ZOX FAQ Section
 
-No live version at the time of writing.
+Check out the [Live Example](https://zox-faq-dev.netlify.app/) here!
+
 
 To view on your own computer, clone down and run via your local host:
 

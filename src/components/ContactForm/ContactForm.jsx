@@ -102,6 +102,7 @@ function ContactForm(props) {
             placeholder='*max 500 words'
             cols='10'
             rows='3'
+            maxLength={500}
           />
           {/* File Upload */}
           <label htmlFor='fileUpload'>File Upload (if needed)</label>

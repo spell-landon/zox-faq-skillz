@@ -55,6 +55,17 @@
   border-radius: 20px;
   background-color: #f1f1f1;
 }
+/* Remove outline on focus */
+.contactBox form select:focus,
+.contactBox form input:focus,
+.contactBox form textarea:focus {
+  outline: none;
+}
+/* Textarea */
+.contactBox form textarea {
+  max-width: 100%;
+  min-width: 100%;
+}
 /* First, Last, Order #, Email */
 .smallerGroup {
   display: grid;
