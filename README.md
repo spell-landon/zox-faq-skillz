@@ -1,10 +1,5 @@
 # ZOX FAQ Section
 
-Check out the [Live Example](https://zox-faq.netlify.app/) here!
-
->I realized the company site was set to 90% zoom on my browser, so changes have been made to match the full zoom. 
-
-#### The 'dev' branch contains additional sections that I'm actively recreating (Hero image, Contact Form, Navigation, etc.)
 No live version at the time of writing.
 
 To view on your own computer, clone down and run via your local host:
