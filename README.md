@@ -3,7 +3,7 @@
 
 > The live link to the dev branch can be found [here](https://zox-faq-dev.netlify.app/)
 
-### Check out the [Live Example](https://zox-faq.netlify.app/) here!
+### Check out the [Live Demo](https://zox-faq.netlify.app/) here!
 
 >I realized the company site was set to 90% zoom on my browser, so changes have been made to match the full zoom. 
 
