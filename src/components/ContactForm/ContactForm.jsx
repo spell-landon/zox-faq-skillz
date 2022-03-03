@@ -36,50 +36,60 @@ function ContactForm(props) {
             <option value='subscriptionIssue'>Subscription Issue</option>
             <option value='otherIssue'>Other Issue</option>
           </select>
-          {/* First Name */}
-          <label htmlFor='firstName'>
-            First Name <span>*</span>
-          </label>
-          <input
-            type='text'
-            id='firstName'
-            name='firstName'
-            autoComplete='off'
-            required
-          />
-          {/* Last Name */}
-          <label htmlFor='lastName'>
-            Last Name <span>*</span>
-          </label>
-          <input
-            type='text'
-            id='lastName'
-            name='lastName'
-            autoComplete='off'
-            required
-          />
-          {/* Order Number */}
-          <label htmlFor='orderNumber'>
-            Order Number <span>*</span>
-          </label>
-          <input
-            type='text'
-            id='orderNumber'
-            name='orderNumber'
-            autoComplete='off'
-            required
-          />
-          {/* Email */}
-          <label htmlFor='email'>
-            Email <span>*</span>
-          </label>
-          <input
-            type='text'
-            id='email'
-            name='email'
-            autoComplete='off'
-            required
-          />
+          <div className={styles.smallerGroup}>
+            <div>
+              {/* First Name */}
+              <label htmlFor='firstName'>
+                First Name <span>*</span>
+              </label>
+              <input
+                type='text'
+                id='firstName'
+                name='firstName'
+                autoComplete='off'
+                required
+              />
+            </div>
+            <div>
+              {/* Last Name */}
+              <label htmlFor='lastName'>
+                Last Name <span>*</span>
+              </label>
+              <input
+                type='text'
+                id='lastName'
+                name='lastName'
+                autoComplete='off'
+                required
+              />
+            </div>
+            <div>
+              {/* Order Number */}
+              <label htmlFor='orderNumber'>
+                Order Number <span>*</span>
+              </label>
+              <input
+                type='text'
+                id='orderNumber'
+                name='orderNumber'
+                autoComplete='off'
+                required
+              />
+            </div>
+            <div>
+              {/* Email */}
+              <label htmlFor='email'>
+                Email <span>*</span>
+              </label>
+              <input
+                type='text'
+                id='email'
+                name='email'
+                autoComplete='off'
+                required
+              />
+            </div>
+          </div>
           {/* Message */}
           <label htmlFor='message'>
             Message <span>*</span>
@@ -91,11 +101,11 @@ function ContactForm(props) {
             required
             placeholder='*max 500 words'
             cols='10'
-            rows='10'
+            rows='3'
           />
           {/* File Upload */}
           <label htmlFor='fileUpload'>File Upload (if needed)</label>
-          <textarea
+          <input
             type='file'
             id='fileUpload'
             name='fileUpload'
