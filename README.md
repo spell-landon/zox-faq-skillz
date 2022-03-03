@@ -2,7 +2,6 @@
 
 Check out the [Live Example](https://zox-faq-dev.netlify.app/) here!
 
-
 To view on your own computer, clone down and run via your local host:
 
 - If you would like to fork the repository so you have your own copy, feel free to!
@@ -18,3 +17,19 @@ To view on your own computer, clone down and run via your local host:
 ### Example image depicting the FAQ Section of the ZOX 'Contact Us' page
 
 <img src='./src/assets/faq-section-detailed.png' alt="FAQ">
+
+<br>
+
+# Additional Images with Hero section and Contact Form
+
+### Hero Section
+
+<img src='./src/assets/heroSection.png' alt="Hero Section">
+
+### Contact Form
+
+<img src='./src/assets/contactForm.png' alt="Contact Form">
+
+### FAQ Section (Additional image)
+
+<img src='./src/assets/faqSection.png' alt="FAQ Section">
