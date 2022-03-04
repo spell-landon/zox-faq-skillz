@@ -46,3 +46,9 @@
   background-color: black;
   color: white;
 }
+
+@media (max-width: 800px) {
+  .bannerContainer {
+    display: none;
+  }
+}

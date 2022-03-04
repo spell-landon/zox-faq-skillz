@@ -54,3 +54,14 @@
 .btn:hover .icon {
   transform: rotate(180deg);
 }
+
+@media (max-width: 800px) {
+  .menuLinks {
+    margin: 0 auto;
+    margin-right: 0;
+  }
+  .btn {
+    font-size: 10px;
+    margin: 0;
+  }
+}

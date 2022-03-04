@@ -8,9 +8,11 @@ import heroImg from '../../assets/hero.png';
 function HeroImage(props) {
   return (
     <div className={styles.heroContainer}>
-      <img src={heroImg} alt='Peace sign' />
-      <div className={styles.heroText}>
-        <p>Contact Us</p>
+      <div className={styles.imageContainer}>
+        <img src={heroImg} alt='Peace sign' />
+        <div className={styles.heroText}>
+          <p>Contact Us</p>
+        </div>
       </div>
     </div>
   );
