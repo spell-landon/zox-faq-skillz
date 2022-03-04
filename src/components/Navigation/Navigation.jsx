@@ -8,6 +8,9 @@ import { BiMenu } from 'react-icons/bi';
 import { FiSearch } from 'react-icons/fi';
 import { FaHeart } from 'react-icons/fa';
 import { AiOutlineShopping } from 'react-icons/ai';
+import { AiOutlineClose } from 'react-icons/ai';
+// components
+import SlideMenu from '../SlideMenu/SlideMenu';
 
 function Navigation(props) {
   const [lessThan800, setLessThan800] = useState(false);
@@ -29,8 +32,15 @@ function Navigation(props) {
     }
   }, [screenWidth]);
 
+  // The ZOX Button styling (2 sets for screen width)
   const zoxBtn = `${styles.btn} ${styles.ZOX}`;
   const smallZox = `${styles.smallBtn} ${styles.ZOX}`;
+
+  // Open/Close Sliding Menu
+  const [menuOpen, setMenuOpen] = useState(false);
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
 
   return (
     <div className={styles.navigationContainer}>
@@ -49,8 +59,8 @@ function Navigation(props) {
         </nav>
       ) : (
         <nav className={styles.smallMenu}>
-          <button className={styles.smallBtn}>
-            <BiMenu />
+          <button className={styles.smallBtn} onClick={toggleMenu}>
+            {!menuOpen ? <BiMenu /> : <AiOutlineClose />}
           </button>
           <button className={smallZox}>ZOX</button>
           <button className={styles.smallBtn}>
@@ -64,6 +74,7 @@ function Navigation(props) {
           </button>
         </nav>
       )}
+      <SlideMenu menuOpen={menuOpen} />
     </div>
   );
 }
