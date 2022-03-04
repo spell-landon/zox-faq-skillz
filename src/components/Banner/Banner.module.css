@@ -20,12 +20,16 @@
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  margin: 0 1rem;
+  margin: 0 1.2rem;
 }
 /* Social Icons */
 .socialIconSection .socialIcon {
-  margin-right: 0.5rem;
-  font-size: 18px;
+  margin-right: 0.7rem;
+  font-size: 16px;
+  cursor: pointer;
+}
+.socialIcon:hover {
+  color: rgba(88, 190, 199, 100%);
 }
 .leftSection p {
   font-size: 14px;
@@ -48,9 +52,12 @@
 /* Right Section Icons */
 .rightSection .icon {
   padding: 0 0.4rem;
-  font-size: 2rem;
+  font-size: 1.9rem;
   height: 100%;
   cursor: pointer;
+}
+.icon:hover {
+  color: rgba(88, 190, 199, 100%);
 }
 /* Present Icon */
 .rightSection .present {
