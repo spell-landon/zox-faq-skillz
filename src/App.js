@@ -6,6 +6,7 @@ import HeroImage from './components/HeroImage/HeroImage';
 import ContactForm from './components/ContactForm/ContactForm';
 import Banner from './components/Banner/Banner';
 import Navigation from './components/Navigation/Navigation';
+import Footer from './components/Footer/Footer';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <HeroImage />
       <ContactForm />
       <FAQ />
+      <Footer />
     </>
   );
 }

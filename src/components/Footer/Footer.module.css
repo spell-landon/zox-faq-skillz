@@ -1,0 +1,52 @@
+.footerContainer {
+  width: 100vw;
+  padding: 3rem 0;
+  padding-bottom: 10rem;
+  text-align: center;
+}
+/* Text Area of Container */
+.textSection {
+  display: flex;
+  margin: 0 auto;
+  width: fit-content;
+}
+/* Separate Each section */
+.textSection section {
+  padding: 0 2.6rem;
+}
+/* Title of each Section */
+.textSection section h5 {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+/* Remove list styling */
+.textSection section ul {
+  list-style-type: none;
+}
+/* Stylize Each Line Item in UL */
+.textSection section ul li {
+  margin-bottom: 0.2rem;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+}
+/* Hover State on each Line Item in UL */
+.textSection section ul li:hover {
+  color: rgba(88, 190, 199, 100%);
+}
+/* Address Text */
+.textSection section p {
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+/* Social Media Icons */
+.textSection section .icon {
+  margin: 0 0.3rem;
+  cursor: pointer;
+}
+/* Social Media Hover States */
+.textSection section .icon:hover {
+  color: rgba(88, 190, 199, 100%);
+}
